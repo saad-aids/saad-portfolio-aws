@@ -166,9 +166,13 @@ c:\aws\
 ### Desktop Viewport
 ![Desktop Viewport Placeholder](https://via.placeholder.com/1200x675/c9c5fb/100c30?text=Desktop+Portfolio+View+%E2%80%94+AWS+Student+Builder+Challenge+Theme)
 
+
+
 ### Mobile Viewport (360px & 414px)
 <p align="center">
   <img src="https://via.placeholder.com/390x844/c9c5fb/100c30?text=Mobile+390px+Responsive+View" width="300" alt="Mobile Viewport Placeholder" />
+<img src= "https://kommodo.ai/i/ZgsBit2pfjNwS0X1doC9" width="300" alt="Mobile Viewport Placeholder" />
+
 </p>
 
 ### The Interactive Hat Rack
