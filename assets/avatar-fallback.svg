@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Mesh Gradient: Lavender Center with Lime Flanks -->
+    <linearGradient id="meshBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cdcfeb" />
+      <stop offset="30%" stop-color="#c0b6ff" />
+      <stop offset="70%" stop-color="#bef779" />
+      <stop offset="100%" stop-color="#bafc36" />
+    </linearGradient>
+    <linearGradient id="primaryCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#100c30" />
+      <stop offset="100%" stop-color="#241a54" />
+    </linearGradient>
+    <filter id="builderGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="400" rx="36" fill="url(#meshBg)" stroke="#100c30" stroke-width="2"/>
+
+  <!-- Technical Grid Overlay (matching banner) -->
+  <g stroke="#100c30" stroke-opacity="0.12" stroke-width="1.2">
+    <line x1="50" y1="0" x2="50" y2="400" />
+    <line x1="100" y1="0" x2="100" y2="400" />
+    <line x1="150" y1="0" x2="150" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="400" />
+    <line x1="250" y1="0" x2="250" y2="400" />
+    <line x1="300" y1="0" x2="300" y2="400" />
+    <line x1="350" y1="0" x2="350" y2="400" />
+
+    <line x1="0" y1="50" x2="400" y2="50" />
+    <line x1="0" y1="100" x2="400" y2="100" />
+    <line x1="0" y1="150" x2="400" y2="150" />
+    <line x1="0" y1="200" x2="400" y2="200" />
+    <line x1="0" y1="250" x2="400" y2="250" />
+    <line x1="0" y1="300" x2="400" y2="300" />
+    <line x1="0" y1="350" x2="400" y2="350" />
+  </g>
+
+  <!-- Center Hexagonal / Shield Core -->
+  <polygon points="200,75 285,124 285,222 200,271 115,222 115,124" 
+           fill="url(#primaryCore)" stroke="#bafc36" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- Stylized Monogram S in Space Mono aesthetic -->
+  <path d="M170 140 H230 C238 140 244 146 244 154 C244 162 238 168 230 168 H170 C162 168 156 174 156 182 C156 190 162 196 170 196 H230" 
+        fill="none" stroke="#bafc36" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <circle cx="200" cy="168" r="4" fill="#ffffff" filter="url(#builderGlow)"/>
+
+  <!-- Subtitle Tag in Ink & Lime -->
+  <rect x="105" y="295" width="190" height="36" rx="18" fill="#100c30" stroke="#bafc36" stroke-width="2"/>
+  <text x="200" y="318" font-family="'Space Mono', monospace" font-size="13" font-weight="700" fill="#bafc36" text-anchor="middle" letter-spacing="1">SAAD SHAIKH</text>
+  
+  <text x="200" y="354" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#100c30" text-anchor="middle" letter-spacing="0.8">AWS STUDENT BUILDER LEADER</text>
+</svg>

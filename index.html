@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>M. Saad M. Sadik Shaikh | AI &amp; Data Science Engineer | AWS Student Builder Leader</title>
+  <meta name="description" content="Portfolio of M. Saad M. Sadik Shaikh (Saad) — 3rd-year B.Tech in AI &amp; Data Science at APCOE&amp;R Pune, AWS Student Builder Campus Leader 2026, building intelligent AI agents and cloud systems.">
+  <meta name="author" content="M. Saad M. Sadik Shaikh">
+  <meta name="keywords" content="M. Saad M. Sadik Shaikh, Saad Shaikh, AI Engineer, Data Science, AWS Student Builder, APCOE&amp;R Pune, Pune University, Machine Learning, Cloud Architecture">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://saadshaikh.dev">
+  <meta property="og:title" content="M. Saad M. Sadik Shaikh | AI &amp; Data Science Portfolio">
+  <meta property="og:description" content="Explore projects in autonomous AI agents, computer vision, and cloud architectures by Saad Shaikh — AWS Student Builder Campus Leader 2026.">
+  <meta property="og:image" content="assets/saad.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="M. Saad M. Sadik Shaikh | AI &amp; Data Science Portfolio">
+  <meta name="twitter:description" content="Third-year AI &amp; Data Science student at APCOE&amp;R Pune, AWS SBCL 2026, and open-source builder.">
+  <meta name="twitter:image" content="assets/saad.jpg">
+
+  <!-- Cache Prevention Meta Tags -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261107">
+  
+  <!-- Google Fonts: Inter & Space Mono (matching AWS Student Builder Challenge branding) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet (Cache-Busted) -->
+  <link rel="stylesheet" href="styles.css?v=20261107-aws">
+
+  <!-- Inline Theme Guarantees (Instant paint even if external CSS was cached) -->
+  <style id="aws-challenge-theme-inline">
+    :root {
+      --accent: #bafc36 !important;
+      --accent-rgb: 186, 252, 54 !important;
+      --accent-hover: #a5f216 !important;
+      --accent-light: #dcff7a !important;
+      --accent-contrast: #100c30 !important;
+      --ink-deep: #100c30 !important;
+      --bg-body: #c9c5fb !important;
+      --text-primary: #100c30 !important;
+      --font-mono: 'Space Mono', Consolas, monospace !important;
+      --font-heading: 'Space Mono', monospace !important;
+    }
+    body {
+      background-color: #c9c5fb !important;
+      background-image: 
+        linear-gradient(to right, rgba(16, 12, 48, 0.14) 1.5px, transparent 1.5px),
+        linear-gradient(to bottom, rgba(16, 12, 48, 0.14) 1.5px, transparent 1.5px),
+        radial-gradient(circle at 10% 88%, #bafc36 0%, rgba(186, 252, 54, 0.6) 24%, transparent 55%),
+        radial-gradient(circle at 90% 88%, #bafc36 0%, rgba(186, 252, 54, 0.6) 24%, transparent 55%),
+        radial-gradient(circle at 94% 10%, #cdebb8 0%, transparent 45%),
+        radial-gradient(circle at 6% 10%, #cdcfeb 0%, transparent 45%),
+        radial-gradient(ellipse at 50% 36%, #c0b6ff 0%, #b2a4fc 50%, #c8c5fc 100%) !important;
+      background-size: 60px 60px, 60px 60px, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100% !important;
+      background-attachment: fixed !important;
+      color: #100c30 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Keyboard accessibility skip link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Saad Shaikh Portfolio Home">
+        <span class="brand-monogram" aria-hidden="true">S</span>
+        <span class="brand-text">Saad<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation & Mobile Menu Container -->
+      <nav id="navbar" class="nav-menu" aria-label="Primary navigation">
+        <ul class="nav-list" id="navLinks">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Action & Hamburger Toggle -->
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-sm btn-outline header-cta">Let's Talk</a>
+        <button type="button" 
+                class="nav-toggle" 
+                id="navToggle" 
+                aria-expanded="false" 
+                aria-controls="navLinks" 
+                aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- 1. Hero Section -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container">
+        
+        <div class="hero-content reveal">
+          <!-- AWS Student Builder Challenge Superpower Showcase Banner (Image Identity) -->
+          <div class="challenge-brand-banner">
+            <span class="challenge-brand-main">AWS Student Builder Challenge:</span>
+            <span class="challenge-brand-sub">Build Your Tech Superpower</span>
+          </div>
+
+          <div class="hero-badge-wrapper">
+            <span class="status-indicator" aria-hidden="true"></span>
+            <span class="status-text">AWS Student Builder Campus Leader 2026</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Hi, I'm <span class="text-gradient">M. Saad M. Sadik Shaikh</span>
+            <span class="nickname">(Saad)</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Third-year B.Tech in Artificial Intelligence &amp; Data Science at APCOE&amp;R Pune (SPPU, Class of 2028).
+          </p>
+
+          <p class="hero-tagline" id="heroTagline">
+            Architecting cost-efficient AI agents, production AWS cloud backends, and edge computer vision systems to solve real-world complexities.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- THE HAT RACK: Interactive Persona & Theme Switcher -->
+          <div class="hat-rack-component" id="hatRackComponent" aria-label="The Hat Rack: Explore Saad's different roles">
+            
+            <!-- Visible Hint Row: Pulsing pill & Reset button -->
+            <div class="hat-hint-row">
+              <button type="button" class="hat-hint-pill pulsing" id="hatHintPill" aria-label="Hint: Click to explore different hats Saad wears">
+                <span class="hint-pulse-dot" aria-hidden="true"></span>
+                <span class="hint-text">Psst... try on a hat</span>
+                <svg class="hint-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+              </button>
+
+              <button type="button" class="hat-reset-btn" id="hatResetBtn" aria-label="Reset theme to default" title="Return to default theme" hidden>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                  <path d="M3 3v5h5"></path>
+                </svg>
+                <span>Reset Theme</span>
+              </button>
+            </div>
+
+            <!-- The Hat Rack: 4 Inline SVG Hat Buttons -->
+            <div class="hat-rack-shelf" role="toolbar" aria-label="The Hat Rack persona options">
+              
+              <!-- Hat 1: Builder (AWS and AI projects) -->
+              <button type="button" 
+                      class="hat-btn" 
+                      id="hatBtn-builder" 
+                      data-hat="builder" 
+                      aria-label="Builder hat: AWS and AI projects" 
+                      aria-pressed="false">
+                <span class="hat-svg-box" aria-hidden="true">
+                  <svg class="hat-svg" viewBox="0 0 36 36" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Builder Construction Hard Hat with Visor & Ridge -->
+                    <path d="M7 23c0-7 5-13 11-13s11 6 11 13" fill="currentColor" fill-opacity="0.18"/>
+                    <path d="M4 23h28c1.1 0 2 .9 2 2s-.9 2-2 2H4c-1.1 0-2-.9-2-2s.9-2 2-2z"/>
+                    <path d="M18 10v6"/>
+                    <path d="M13 12.5l2 4"/>
+                    <path d="M23 12.5l-2 4"/>
+                    <circle cx="18" cy="19.5" r="1.5" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="hat-title">Builder</span>
+              </button>
+
+              <!-- Hat 2: Founder (AI Saad Services, AI for small businesses in Maharashtra) -->
+              <button type="button" 
+                      class="hat-btn" 
+                      id="hatBtn-founder" 
+                      data-hat="founder" 
+                      aria-label="Founder hat: AI Saad Services, AI for small businesses in Maharashtra" 
+                      aria-pressed="false">
+                <span class="hat-svg-box" aria-hidden="true">
+                  <svg class="hat-svg" viewBox="0 0 36 36" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Founder Fedora / Brimmed Hat with Ribbon -->
+                    <path d="M3 24c5 1.5 10 2 15 2s10-.5 15-2c1.5-.5 1.5-2 0-2.5-4-1.5-8-2-15-2s-11 .5-15 2c-1.5.5-1.5 2 0 2.5z" fill="currentColor" fill-opacity="0.15"/>
+                    <path d="M9 21.5c-.5-3.5 0-9 2-11.5 1.5-2 4-1 7 1 3-2 5.5-3 7-1 2 2.5 2.5 8 2 11.5" fill="currentColor" fill-opacity="0.22"/>
+                    <path d="M9 19c4.5 1 13.5 1 18 0"/>
+                  </svg>
+                </span>
+                <span class="hat-title">Founder</span>
+              </button>
+
+              <!-- Hat 3: Teacher (Shivkunj Vidya, teaching AI to school students) -->
+              <button type="button" 
+                      class="hat-btn" 
+                      id="hatBtn-teacher" 
+                      data-hat="teacher" 
+                      aria-label="Teacher hat: Shivkunj Vidya, teaching AI to school students" 
+                      aria-pressed="false">
+                <span class="hat-svg-box" aria-hidden="true">
+                  <svg class="hat-svg" viewBox="0 0 36 36" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Teacher Academic Mortarboard Cap & Tassel -->
+                    <polygon points="18 8 33 15 18 22 3 15" fill="currentColor" fill-opacity="0.2"/>
+                    <path d="M9 17.5v6.5c0 3 4 4.5 9 4.5s9-1.5 9-4.5v-6.5"/>
+                    <path d="M29 16.5v8"/>
+                    <circle cx="29" cy="26" r="1.5" fill="currentColor"/>
+                    <circle cx="18" cy="15" r="1.5" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="hat-title">Teacher</span>
+              </button>
+
+              <!-- Hat 4: Dealer (Sadik Motors, my family vehicle dealership in Junnar) -->
+              <button type="button" 
+                      class="hat-btn" 
+                      id="hatBtn-dealer" 
+                      data-hat="dealer" 
+                      aria-label="Dealer hat: Sadik Motors, family vehicle dealership in Junnar" 
+                      aria-pressed="false">
+                <span class="hat-svg-box" aria-hidden="true">
+                  <svg class="hat-svg" viewBox="0 0 36 36" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Dealer Automotive Peaked Flat Cap -->
+                    <path d="M5 22c1.5 0 5 .8 13 .8s11.5-.8 13-.8c2 0 2.5-1.2 2-2-1.5-2.5-4.5-5.5-8-7.5-3.5-2-11-2.5-16 0-3 1.5-4.5 4.5-5.5 7.5-.5.8.5 2 1.5 2z" fill="currentColor" fill-opacity="0.2"/>
+                    <path d="M4 22.5c4 2 9 2.5 14 2.5s10-.5 14-2.5"/>
+                    <circle cx="19" cy="12.5" r="1.5" fill="currentColor"/>
+                  </svg>
+                </span>
+                <span class="hat-title">Dealer</span>
+              </button>
+
+            </div>
+
+            <!-- Small Story Card Next to / Under the Rack -->
+            <div class="hat-story-card" id="hatStoryCard" role="region" aria-label="Role story details" hidden>
+              <div class="story-card-header">
+                <div class="story-title-group">
+                  <span class="story-badge" id="storyBadge">Role</span>
+                  <p class="story-title" id="storyTitle">Hat Story Title</p>
+                </div>
+                <button type="button" class="story-close-btn" id="storyCloseBtn" aria-label="Close story card">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+
+              <p class="story-body" id="storyBody">Story narration goes here.</p>
+
+              <div class="story-fact-box">
+                <span class="fact-label" aria-hidden="true">💡 Surprising Fact:</span>
+                <span class="fact-content" id="storyFact">Select any hat above to reveal role insights and engineering facts.</span>
+              </div>
+            </div>
+
+            <!-- Easter Egg Banner: "Full-stack human" -->
+            <div class="hat-easter-egg-banner" id="hatEasterEggBanner" role="status" aria-live="polite" hidden>
+              <div class="easter-egg-icon" aria-hidden="true">✨</div>
+              <div class="easter-egg-text-wrap">
+                <strong class="easter-egg-heading">Full-stack human unlocked!</strong>
+                <p class="easter-egg-desc">You tried all 4 hats: Builder, Founder, Teacher &amp; Dealer. We contain multitudes.</p>
+              </div>
+              <button type="button" class="easter-egg-dismiss" id="easterEggDismissBtn" aria-label="Dismiss full-stack human banner">
+                ✕
+              </button>
+            </div>
+
+          </div>
+
+
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">📍</span>
+              <span>Pune &amp; Junnar, Maharashtra</span>
+            </div>
+            <div class="meta-separator" aria-hidden="true">•</div>
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">🎓</span>
+              <span>APCOE&amp;R Pune (SPPU '28)</span>
+            </div>
+            <div class="meta-separator" aria-hidden="true">•</div>
+            <div class="meta-item">
+              <span class="meta-icon" aria-hidden="true">☁️</span>
+              <span>AWS Cloud Specialist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photo with Graceful Fallback -->
+        <div class="hero-visual reveal">
+          <div class="photo-frame">
+            <div class="photo-glow" aria-hidden="true"></div>
+            
+            <div class="photo-wrapper" id="photoWrapper">
+              <!-- Primary image tag: graceful fallback triggers on error -->
+              <img src="assets/saad.jpg?v=20261107" 
+                   alt="M. Saad M. Sadik Shaikh - AI &amp; Cloud Engineer" 
+                   class="hero-photo" 
+                   id="heroPhoto"
+                   width="360"
+                   height="360"
+                   fetchpriority="high"
+                   decoding="async"
+                   onerror="this.style.display='none'; document.getElementById('photoFallbackCard').classList.add('active');">
+              
+              <!-- Graceful Fallback Card (Active when photo is absent) -->
+              <div class="photo-fallback-card" id="photoFallbackCard">
+                <div class="fallback-tech-pattern" aria-hidden="true"></div>
+                <div class="fallback-avatar-circle">
+                  <span class="fallback-initials">SS</span>
+                </div>
+                <div class="fallback-info">
+                  <p class="fallback-name">M. Saad Shaikh</p>
+                  <p class="fallback-title">AI &amp; Data Science Builder</p>
+                  <span class="fallback-chip">APCOE&amp;R Pune</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Overlays -->
+            <div class="floating-badge badge-top-right">
+              <span class="badge-icon">⚡</span>
+              <div class="badge-text">
+                <span class="badge-label">Community</span>
+                <span class="badge-value">AWS SBCL 2026</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <span class="badge-icon">🤖</span>
+              <div class="badge-text">
+                <span class="badge-label">Focus Area</span>
+                <span class="badge-value">AI Agents &amp; Cloud</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section id="about" class="about-section" aria-labelledby="about-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Discover My Story</span>
+          <h2 id="about-heading" class="section-title">From Family Dealership to AI &amp; Cloud Innovation</h2>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <div class="about-narrative reveal">
+            <!-- Paragraph 1 -->
+            <p class="about-paragraph highlight-lead">
+              My engineering intuition didn't begin inside a textbook—it was forged in Junnar, Maharashtra, observing the moving gears, complex diagnostics, and operational logistics of our family vehicle dealership. Immersed in mechanical assemblies and customer troubleshooting from a young age, I developed a deep appreciation for how interconnected parts work together under stress. That foundational curiosity soon migrated into computing: translating physical engines into software algorithms, machine intelligence, and distributed architectures.
+            </p>
+
+            <!-- Paragraph 2 -->
+            <p class="about-paragraph">
+              Today, as a third-year AI &amp; Data Science undergraduate at Anantrao Pawar College of Engineering and Research (APCOE&amp;R), Pune, affiliated with Savitribai Phule Pune University (graduating in 2028), I channel that mindset into engineering resilient AI systems and leading vibrant developer communities. I am honored to serve as an <strong>AWS Student Builder Campus Leader 2026</strong> and <strong>AWS Student Builder Group Co-Organizer</strong>, while driving campus technical education as a <strong>GeeksforGeeks Campus Mantri</strong> and collaborating as a <strong>Microsoft Learn and Google Student Ambassador</strong>. My goal is simple: build high-utility intelligent software and mentor the next wave of engineers to deploy with confidence.
+            </p>
+
+            <div class="about-quote">
+              <p>“Great engineering is the art of turning raw complexity into reliable, accessible tools for everyday people.”</p>
+            </div>
+          </div>
+
+          <!-- Quick facts / highlight cards -->
+          <div class="about-highlights reveal">
+            
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">🎓</div>
+              <div class="info-content">
+                <h3 class="info-title">Academics &amp; University</h3>
+                <p class="info-desc">B.Tech in Artificial Intelligence &amp; Data Science at APCOE&amp;R Pune (SPPU), graduating in 2028.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">☁️</div>
+              <div class="info-content">
+                <h3 class="info-title">AWS Community Leadership</h3>
+                <p class="info-desc">AWS Student Builder Campus Leader 2026 &amp; AWS Student Builder Group Co-Organizer in Pune.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">🌱</div>
+              <div class="info-content">
+                <h3 class="info-title">Grassroots Inspiration</h3>
+                <p class="info-desc">Rooted in Junnar's entrepreneurial ecosystem; bridging mechanical problem solving with cutting-edge software.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon" aria-hidden="true">🌐</div>
+              <div class="info-content">
+                <h3 class="info-title">Global Campus Ecosystems</h3>
+                <p class="info-desc">Active Campus Mantri at GeeksforGeeks; technical advocate across Microsoft and Google student programs.</p>
+              </div>
+            </div>
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. Skills / Tech Superpowers Section -->
+    <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Skills &amp; Competencies</span>
+          <h2 id="skills-heading" class="section-title">Tech Superpowers</h2>
+          <p class="section-subtitle">Categorized competencies cultivated through production projects, hackathons, and community labs.</p>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="skills-cards-grid">
+          
+          <!-- Card 1: AI and ML -->
+          <article class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">🤖</div>
+              <div class="category-meta">
+                <h3 class="category-title">AI and ML</h3>
+                <span class="category-badge">Modeling &amp; Inference</span>
+              </div>
+            </div>
+            <p class="category-summary">
+              Designing deep learning architectures, multimodal LLM pipelines, and computer vision systems for edge and cloud deployment.
+            </p>
+            <div class="skill-chips-container" role="list" aria-label="AI and ML skills">
+              <span class="skill-chip" role="listitem">PyTorch</span>
+              <span class="skill-chip" role="listitem">TensorFlow</span>
+              <span class="skill-chip" role="listitem">OpenCV</span>
+              <span class="skill-chip" role="listitem">Hugging Face</span>
+              <span class="skill-chip" role="listitem">LLM Agent Architectures</span>
+              <span class="skill-chip" role="listitem">Prompt Engineering</span>
+              <span class="skill-chip" role="listitem">Scikit-Learn</span>
+              <span class="skill-chip" role="listitem">Computer Vision</span>
+              <span class="skill-chip" role="listitem">Model Optimization</span>
+            </div>
+          </article>
+
+          <!-- Card 2: Data -->
+          <article class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">📊</div>
+              <div class="category-meta">
+                <h3 class="category-title">Data</h3>
+                <span class="category-badge">Engineering &amp; Analytics</span>
+              </div>
+            </div>
+            <p class="category-summary">
+              Transforming raw, unstructured telemetry and tabular datasets into robust training pipelines and analytical insights.
+            </p>
+            <div class="skill-chips-container" role="list" aria-label="Data skills">
+              <span class="skill-chip" role="listitem">Python</span>
+              <span class="skill-chip" role="listitem">Pandas</span>
+              <span class="skill-chip" role="listitem">NumPy</span>
+              <span class="skill-chip" role="listitem">SQL</span>
+              <span class="skill-chip" role="listitem">Feature Engineering</span>
+              <span class="skill-chip" role="listitem">Exploratory Data Analysis</span>
+              <span class="skill-chip" role="listitem">Matplotlib / Seaborn</span>
+              <span class="skill-chip" role="listitem">Data Preprocessing</span>
+              <span class="skill-chip" role="listitem">Vector Embeddings</span>
+            </div>
+          </article>
+
+          <!-- Card 3: Cloud (AWS) -->
+          <article class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">☁️</div>
+              <div class="category-meta">
+                <h3 class="category-title">Cloud (AWS)</h3>
+                <span class="category-badge">Architecture &amp; SDKs</span>
+              </div>
+            </div>
+            <p class="category-summary">
+              Architecting secure, cost-governed serverless infrastructures, storage tiers, and managed ML inference endpoints.
+            </p>
+            <div class="skill-chips-container" role="list" aria-label="AWS Cloud skills">
+              <span class="skill-chip" role="listitem">Amazon EC2</span>
+              <span class="skill-chip" role="listitem">Amazon S3</span>
+              <span class="skill-chip" role="listitem">AWS Lambda</span>
+              <span class="skill-chip" role="listitem">AWS IAM</span>
+              <span class="skill-chip" role="listitem">Amazon SageMaker</span>
+              <span class="skill-chip" role="listitem">Amazon CloudWatch</span>
+              <span class="skill-chip" role="listitem">Boto3 SDK</span>
+              <span class="skill-chip" role="listitem">AWS CLI</span>
+              <span class="skill-chip" role="listitem">Cost Optimization</span>
+            </div>
+          </article>
+
+          <!-- Card 4: Web -->
+          <article class="skill-category-card reveal">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">⚡</div>
+              <div class="category-meta">
+                <h3 class="category-title">Web</h3>
+                <span class="category-badge">Full-Stack &amp; APIs</span>
+              </div>
+            </div>
+            <p class="category-summary">
+              Crafting high-performance client interfaces, responsive layouts, and lightweight backend API gateways.
+            </p>
+            <div class="skill-chips-container" role="list" aria-label="Web development skills">
+              <span class="skill-chip" role="listitem">HTML5 Semantic Web</span>
+              <span class="skill-chip" role="listitem">Modern CSS3</span>
+              <span class="skill-chip" role="listitem">Vanilla JavaScript ES6+</span>
+              <span class="skill-chip" role="listitem">RESTful APIs</span>
+              <span class="skill-chip" role="listitem">FastAPI</span>
+              <span class="skill-chip" role="listitem">Flask</span>
+              <span class="skill-chip" role="listitem">Responsive Design</span>
+              <span class="skill-chip" role="listitem">WCAG Accessibility</span>
+            </div>
+          </article>
+
+          <!-- Card 5: Leadership -->
+          <article class="skill-category-card reveal skill-card-wide">
+            <div class="category-header">
+              <div class="category-icon" aria-hidden="true">🏆</div>
+              <div class="category-meta">
+                <h3 class="category-title">Leadership &amp; Community</h3>
+                <span class="category-badge">Advocacy &amp; Mentorship</span>
+              </div>
+            </div>
+            <p class="category-summary">
+              Driving developer adoption, orchestrating city-scale technical events, and empowering peers to build in the cloud.
+            </p>
+            <div class="skill-chips-container" role="list" aria-label="Leadership skills">
+              <span class="skill-chip" role="listitem">AWS SBCL 2026 Leadership</span>
+              <span class="skill-chip" role="listitem">Student Builder Group Co-Organizer</span>
+              <span class="skill-chip" role="listitem">GeeksforGeeks Campus Mantri</span>
+              <span class="skill-chip" role="listitem">Microsoft Student Ambassador</span>
+              <span class="skill-chip" role="listitem">Google Student Ambassador</span>
+              <span class="skill-chip" role="listitem">Technical Workshop Host</span>
+              <span class="skill-chip" role="listitem">Hackathon Strategy Mentorship</span>
+              <span class="skill-chip" role="listitem">Public Speaking</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Engineered Solutions</span>
+          <h2 id="projects-heading" class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Production-ready open-source systems spanning agentic workflows, cyber safety, computer vision, and hackathon prototypes.</p>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: Lost & Found Portal (LFP) -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-meta-top">
+                <span class="project-type-tag">Campus Platform • Hackathon</span>
+                <span class="project-number">01</span>
+              </div>
+              <h3 class="project-title">Lost &amp; Found Portal (LFP)</h3>
+              <p class="project-description">
+                Interactive campus asset recovery platform built during the APCOE&amp;R Pune Hackathon by Team InfinityAI, enabling students to report, track, and reclaim misplaced belongings across college grounds.
+              </p>
+              <div class="project-tech-tags" aria-label="Technologies used">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">LocalStorage</span>
+                <span class="tech-tag">Campus Web</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/saad-aids/LFP-Lost-and-Found-Portal" class="btn btn-sm btn-primary project-btn" target="_blank" rel="noopener noreferrer" aria-label="View Lost and Found Portal repository on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: LangGraph Conditional Hiring Workflow -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-meta-top">
+                <span class="project-type-tag">Multi-Agent AI • Automation</span>
+                <span class="project-number">02</span>
+              </div>
+              <h3 class="project-title">LangGraph Conditional Hiring Workflow</h3>
+              <p class="project-description">
+                Intelligent candidate evaluation and recruitment routing pipeline built with LangGraph and Streamlit, featuring conditional decision branching, resume qualification grading, and automated interview scheduling.
+              </p>
+              <div class="project-tech-tags" aria-label="Technologies used">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">LangGraph</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">LLM Agents</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/saad-aids/LangGraph-Hiring-Workflow" class="btn btn-sm btn-primary project-btn" target="_blank" rel="noopener noreferrer" aria-label="View LangGraph Hiring Workflow repository on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Cyber-Suraksha -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-meta-top">
+                <span class="project-type-tag">Public Safety • Cyber Defense</span>
+                <span class="project-number">03</span>
+              </div>
+              <h3 class="project-title">Cyber-Suraksha: Fraud Recovery Shield</h3>
+              <p class="project-description">
+                AI-powered cyber incident first responder designed for Maharashtra citizens to report financial fraud, analyze phishing lures and scam vectors in vernacular Marathi and Hindi, and trigger fast asset freeze workflows.
+              </p>
+              <div class="project-tech-tags" aria-label="Technologies used">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Threat Intel</span>
+                <span class="tech-tag">Vernacular AI</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/saad-aids/cyber-suraksha" class="btn btn-sm btn-primary project-btn" target="_blank" rel="noopener noreferrer" aria-label="View Cyber-Suraksha repository on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Student Sleep Detector -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-meta-top">
+                <span class="project-type-tag">Computer Vision • Edge AI</span>
+                <span class="project-number">04</span>
+              </div>
+              <h3 class="project-title">Student Sleep Detector (Hindi Alert)</h3>
+              <p class="project-description">
+                Real-time drowsiness detection system using OpenCV and Eye Aspect Ratio (EAR) landmark tracking that monitors pupil closure and triggers automated Hindi voice alerts to help students stay attentive during long study nights.
+              </p>
+              <div class="project-tech-tags" aria-label="Technologies used">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenCV</span>
+                <span class="tech-tag">EAR Landmarks</span>
+                <span class="tech-tag">Audio Alerts</span>
+                <span class="tech-tag">Edge Vision</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/saad-aids/sleep_detector" class="btn btn-sm btn-primary project-btn" target="_blank" rel="noopener noreferrer" aria-label="View Student Sleep Detector repository on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Atmosify Weather App -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-meta-top">
+                <span class="project-type-tag">Web Application • API Integration</span>
+                <span class="project-number">05</span>
+              </div>
+              <h3 class="project-title">Atmosify: Real-Time Weather Application</h3>
+              <p class="project-description">
+                Fast, responsive meteorological forecast web application built with vanilla JavaScript, fetching real-time planetary weather metrics, humidity, atmospheric pressure, and dynamic weather condition themes via OpenWeather API.
+              </p>
+              <div class="project-tech-tags" aria-label="Technologies used">
+                <span class="tech-tag">JavaScript ES6+</span>
+                <span class="tech-tag">OpenWeather API</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3 Grid</span>
+                <span class="tech-tag">Fetch API</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/saad-aids/Weather-app" class="btn btn-sm btn-primary project-btn" target="_blank" rel="noopener noreferrer" aria-label="View Atmosify Weather App repository on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: YOLO Hackathon VIT Kondhwa -->
+          <article class="project-card reveal">
+            <div class="project-card-inner">
+              <div class="project-meta-top">
+                <span class="project-type-tag">Autonomous Vision • Hackathon</span>
+                <span class="project-number">06</span>
+              </div>
+              <h3 class="project-title">Offroad Scene Segmentation (VIT Kondhwa)</h3>
+              <p class="project-description">
+                Deep learning offroad semantic scene segmentation prototype engineered for the VIT Pune Kondhwa Hackathon by Team [0], identifying drivable terrain, rugged obstacle boundaries, and elevation hazards.
+              </p>
+              <div class="project-tech-tags" aria-label="Technologies used">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">YOLO</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">Semantic Segmentation</span>
+                <span class="tech-tag">PyTorch</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/saad-aids/YOLO_HACKATHON-VIT-KONDHWA" class="btn btn-sm btn-primary project-btn" target="_blank" rel="noopener noreferrer" aria-label="View YOLO Hackathon repository on GitHub">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. Achievements and Roles Section (Timeline) -->
+    <section id="achievements" class="achievements-section" aria-labelledby="achievements-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Milestones &amp; Impact</span>
+          <h2 id="achievements-heading" class="section-title">Achievements &amp; Roles</h2>
+          <p class="section-subtitle">Chronological record of leadership appointments, open-source initiatives, and competition milestones.</p>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2026</span>
+                <span class="timeline-role-badge">Lead Ambassador</span>
+              </div>
+              <h3 class="timeline-title">AWS Student Builder Campus Leader (SBCL) 2026</h3>
+              <p class="timeline-org">Amazon Web Services (AWS) Ecosystem</p>
+              <p class="timeline-desc">
+                Appointed to spearhead cloud architectural literacy, organize hands-on technical workshops, and guide hundreds of engineering students through cloud certifications and real-world AWS projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2026</span>
+                <span class="timeline-role-badge">Community Organizer</span>
+              </div>
+              <h3 class="timeline-title">AWS Student Builder Group (SBGL) Co-Organizer</h3>
+              <p class="timeline-org">AWS Community Pune</p>
+              <p class="timeline-desc">
+                Co-leading regional community initiatives in Pune, orchestrating collaborative developer meetups, hosting AWS expert sessions, and fostering active peer-to-peer cloud engineering study groups.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2026</span>
+                <span class="timeline-role-badge">Open Source</span>
+              </div>
+              <h3 class="timeline-title">GSSoC 2026 Contributor</h3>
+              <p class="timeline-org">GirlScript Summer of Code</p>
+              <p class="timeline-desc">
+                Actively contributing to open-source codebases with optimizations in algorithmic workflows, documentation clarity, and developer tooling during the nationwide GSSoC program.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2025 – 2026</span>
+                <span class="timeline-role-badge">Event Leadership</span>
+              </div>
+              <h3 class="timeline-title">AWS Future Builders Connect Pune Volunteer</h3>
+              <p class="timeline-org">AWS Future Builders Summit</p>
+              <p class="timeline-desc">
+                Managed on-ground logistics, student engagement pipelines, and stage technical assistance for over 500+ attendees and enterprise speakers at AWS Future Builders Connect Pune.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 5 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-year">2025 – 2026</span>
+                <span class="timeline-role-badge">National Finalist</span>
+              </div>
+              <h3 class="timeline-title">Smart India Hackathon Participant</h3>
+              <p class="timeline-org">Ministry of Education &amp; AICTE, Government of India</p>
+              <p class="timeline-desc">
+                Engineered a modular Autonomous Mobile Robot (AMR) platform for industrial warehouse automation, delivering computer vision navigation and telemetry under high-pressure competitive evaluation.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+                <!-- Community Video Logs & Vlogs Showcase (YouTube Embeds) -->
+        <div class="video-logs-showcase reveal" id="community-videos" aria-labelledby="video-logs-heading">
+          <div class="video-logs-header">
+            <div class="video-badge-pill">
+              <span class="video-badge-dot" aria-hidden="true"></span>
+              <span>On-Ground Video Dispatches &amp; Technical Vlogs</span>
+            </div>
+            <h3 id="video-logs-heading" class="video-logs-title">
+              Community Leadership &amp; Engineering in Action
+            </h3>
+            <p class="video-logs-subtitle">
+              Live footage from AWS ecosystem summits, campus cloud clinics for 100+ students, and tech industry field vlogs.
+            </p>
+          </div>
+
+          <div class="video-grid">
+            
+            <!-- Video 1: AWS Volunteering -->
+            <div class="video-card">
+              <div class="video-frame-wrap">
+                <iframe src="https://www.youtube-nocookie.com/embed/Jzy0zhndzRc?playsinline=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" 
+                        title="I Volunteered at AWS Future Builders Connect Pune! | Live Swag Unboxing + Event Vlog" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                        allowfullscreen 
+                        loading="lazy"></iframe>
+              </div>
+              <div class="video-card-body">
+                <div class="video-meta-row">
+                  <span class="video-tag aws-tag">AWS Community</span>
+                  <span class="video-status-dot-wrap">
+                    <span class="v-dot"></span> 500+ Attendees
+                  </span>
+                </div>
+                <h4 class="video-title">I Volunteered at AWS Future Builders Connect Pune! ☁️</h4>
+                <p class="video-desc">
+                  On-ground event coordination, speaker hosting, student registration flows, and live swag unboxing at the AWS Future Builders Connect summit in Pune.
+                </p>
+                <div class="video-card-action-row">
+                  <span class="inline-play-badge">
+                    <svg class="inline-play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Plays Inline</span>
+                  </span>
+                  <button type="button" class="theater-expand-btn" data-video-id="Jzy0zhndzRc" data-title="I Volunteered at AWS Future Builders Connect Pune!" aria-label="Watch AWS Future Builders Connect in theater view">
+                    <span>⛶ Theater View</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 2: Engineers Day Vlog -->
+            <div class="video-card">
+              <div class="video-frame-wrap">
+                <iframe src="https://www.youtube-nocookie.com/embed/yGuzefL4vPY?playsinline=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" 
+                        title="Inside the World of Concrete &amp; Construction | Engineers' Day 2026 | Pune RMC Association Tech Vlog" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                        allowfullscreen 
+                        loading="lazy"></iframe>
+              </div>
+              <div class="video-card-body">
+                <div class="video-meta-row">
+                  <span class="video-tag eng-tag">Industry &amp; Field Vlog</span>
+                  <span class="video-status-dot-wrap">
+                    <span class="v-dot orange"></span> Engineers' Day
+                  </span>
+                </div>
+                <h4 class="video-title">Inside Concrete &amp; Construction | Engineers' Day Vlog 🏗️</h4>
+                <p class="video-desc">
+                  Special field documentation exploring industrial mechanical assemblies, batching plant automation, and material science with the Pune RMC Association.
+                </p>
+                <div class="video-card-action-row">
+                  <span class="inline-play-badge">
+                    <svg class="inline-play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Plays Inline</span>
+                  </span>
+                  <button type="button" class="theater-expand-btn" data-video-id="yGuzefL4vPY" data-title="Inside Concrete &amp; Construction | Engineers' Day Vlog" aria-label="Watch Engineers' Day vlog in theater view">
+                    <span>⛶ Theater View</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Video 3: AWS Architecture Session -->
+            <div class="video-card">
+              <div class="video-frame-wrap">
+                <iframe src="https://www.youtube-nocookie.com/embed/xM9TbiM5ZMM?playsinline=1&amp;rel=0&amp;modestbranding=1&amp;enablejsapi=1" 
+                        title="AWS Live Architecture Session: 100+ Students Joined the Session" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                        allowfullscreen 
+                        loading="lazy"></iframe>
+              </div>
+              <div class="video-card-body">
+                <div class="video-meta-row">
+                  <span class="video-tag aws-tag">AWS Cloud Lab</span>
+                  <span class="video-status-dot-wrap">
+                    <span class="v-dot"></span> 100+ Students
+                  </span>
+                </div>
+                <h4 class="video-title">Live AWS Session: 100+ Students Joined! 🚀</h4>
+                <p class="video-desc">
+                  Hands-on live cloud architecture and certification training session conducted for an active audience of more than 100 student builders and future cloud architects.
+                </p>
+                <div class="video-card-action-row">
+                  <span class="inline-play-badge">
+                    <svg class="inline-play-icon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Plays Inline</span>
+                  </span>
+                  <button type="button" class="theater-expand-btn" data-video-id="xM9TbiM5ZMM" data-title="Live AWS Session: 100+ Students Joined!" aria-label="Watch Live AWS Session in theater view">
+                    <span>⛶ Theater View</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+<!-- Shivkunj AI Initiative Featured Showcase (Day 01 & Day 02 with LinkedIn Videos & Interactive Lock) -->
+        <div class="shivkunj-showcase-box reveal" id="shivkunj-initiative" aria-labelledby="shivkunj-heading">
+          
+          <div class="shivkunj-header">
+            <div class="shivkunj-badge-row">
+              <div class="shivkunj-badge">
+                <span class="badge-icon" aria-hidden="true">🌿</span>
+                <span>Grassroots AI Education • Pune, Maharashtra</span>
+              </div>
+              <div class="shivkunj-quote-pill">
+                <span>"Dnyanaacha Prakaash Sarvansaathi"</span>
+              </div>
+            </div>
+            
+            <h3 id="shivkunj-heading" class="shivkunj-title">
+              Shivkunj AI Initiative: Transforming Young Minds with AI
+            </h3>
+            
+            <p class="shivkunj-subtitle">
+              Demystifying artificial intelligence for students from Classes 5th to 10th at 100-year-old Mahatma Jyotirao Phule High School, Pune — from Transformer architectures to animated AI movies of Chhatrapati Shivaji Maharaj.
+            </p>
+          </div>
+
+          <!-- Day Navigation Tabs with Lock Status -->
+          <div class="shivkunj-nav-bar" role="tablist" aria-label="Shivkunj Workshop Days">
+            <button type="button" 
+                    class="shivkunj-tab active" 
+                    id="tabDay1" 
+                    role="tab" 
+                    aria-selected="true" 
+                    aria-controls="panelDay1" 
+                    data-day="1">
+              <span class="tab-badge">Day 01</span>
+              <span class="tab-label">The Courage to Start (100 Students)</span>
+              <span class="lock-indicator unlocked" title="Milestone Unlocked">🔓</span>
+            </button>
+
+            <button type="button" 
+                    class="shivkunj-tab" 
+                    id="tabDay2" 
+                    role="tab" 
+                    aria-selected="false" 
+                    aria-controls="panelDay2" 
+                    data-day="2">
+              <span class="tab-badge">Day 02</span>
+              <span class="tab-label">Transformers &amp; Shivaji Maharaj AI Movie</span>
+              <span class="lock-indicator locked" id="tab2LockIcon" title="Milestone Lock">🔒</span>
+            </button>
+
+            <button type="button" 
+                    class="shivkunj-tab" 
+                    id="tabDay3" 
+                    role="tab" 
+                    aria-selected="false" 
+                    aria-controls="panelDay3" 
+                    data-day="3">
+              <span class="tab-badge">Day 03</span>
+              <span class="tab-label">Grand Graduation &amp; 100+ Certificates 🎓</span>
+              <span class="lock-indicator locked" id="tab3LockIcon" title="Milestone Lock">🔒</span>
+            </button>
+          </div>
+
+          <!-- Panels Container -->
+          <div class="shivkunj-panels">
+            
+            <!-- PANEL 1: DAY 01 -->
+            <div class="shivkunj-panel active" id="panelDay1" role="tabpanel" aria-labelledby="tabDay1">
+              <div class="panel-grid">
+                
+                <!-- Video / LinkedIn Embed Column -->
+                <div class="panel-media-col">
+                  <div class="linkedin-embed-card">
+                    <div class="embed-card-header">
+                      <div class="author-meta">
+                        <img src="assets/saad.jpg?v=20261107" alt="Saad Shaikh" class="author-avatar" width="38" height="38">
+                        <div>
+                          <div class="author-name">M. Saad M. Sadik Shaikh</div>
+                          <div class="post-date">Day 01 Workshop • Nana Peth, Pune</div>
+                        </div>
+                      </div>
+                      <a href="https://lnkd.in/p/drKgzgH9" target="_blank" rel="noopener noreferrer" class="linkedin-direct-link" title="Open on LinkedIn">
+                        <svg class="linkedin-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46V10.9M7.86 6.57a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+                        <span>Post Link</span>
+                      </a>
+                    </div>
+
+                    <!-- LinkedIn Video Embed -->
+                    <div class="embed-wrapper">
+                      <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7479531093877223425" 
+                              height="440" 
+                              width="100%" 
+                              frameborder="0" 
+                              allowfullscreen="" 
+                              title="Shivkunj AI Initiative Day 01 Video on LinkedIn"
+                              loading="lazy"></iframe>
+                    </div>
+
+                    <div class="embed-card-footer">
+                      <a href="https://lnkd.in/p/drKgzgH9" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary btn-full">
+                        <span>Watch Day 01 Video on LinkedIn</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Story Prose & Key Reflections -->
+                <div class="panel-content-col">
+                  <div class="status-indicator-pill unlocked">
+                    <span class="status-dot"></span>
+                    <span>Day 01 Milestone Unlocked • 100 Students Reached</span>
+                  </div>
+
+                  <h4 class="story-title">"Saad. Start kardo." — Between University Exams &amp; Zero Funding</h4>
+
+                  <div class="story-body-text">
+                    <p>
+                      My university exams were going on. Between my last two papers — <strong>Environmental Studies</strong> and <strong>Project Management</strong> — every logical voice in my head said:
+                    </p>
+                    
+                    <div class="quote-callout">
+                      <p class="quote-text">
+                        "Saad, study kar. Saad, exams pehle. Saad, baad mein kar."<br>
+                        But my heart said just three words: <strong>"Saad. Start kardo." 🇮🇳</strong>
+                      </p>
+                    </div>
+
+                    <p>
+                      Today I walked into a school that has stood for 100 years — <strong>Mahatma Jyotirao Phule High School, Rasta Peth, Pune</strong> — built on the belief that every child deserves education, regardless of where they come from.
+                    </p>
+
+                    <div class="milestone-metrics">
+                      <div class="metric-item">
+                        <span class="metric-val">100</span>
+                        <span class="metric-desc">Students in One Room</span>
+                      </div>
+                      <div class="metric-item">
+                        <span class="metric-val">Day 1</span>
+                        <span class="metric-desc">Zero Funding Start</span>
+                      </div>
+                      <div class="metric-item">
+                        <span class="metric-val">100 Yrs</span>
+                        <span class="metric-desc">School Heritage</span>
+                      </div>
+                    </div>
+
+                    <p>
+                      Students came from every corner of Maharashtra, ranging from Nagpur to Nandurbar and Jalgaon. Some had never seen AI in their lives. Then, a student whispered:
+                    </p>
+
+                    <div class="whisper-box">
+                      <span class="whisper-marathi">"AI ne amchi shabd aikla?"</span>
+                      <span class="whisper-trans">("Did AI... listen to my word?") 🎵</span>
+                    </div>
+
+                    <p>
+                      In that moment, I understood something no university exam could teach me. The courage to start between two exam papers with zero funding and one mission: giving young minds the skills, confidence, and belief that their voice matters.
+                    </p>
+                  </div>
+
+                  <div class="hashtags-list">
+                    <span class="tag">#ShivkunjAI</span>
+                    <span class="tag">#AIForAll</span>
+                    <span class="tag">#AIEducation</span>
+                    <span class="tag">#DigitalIndia</span>
+                    <span class="tag">#Pune</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- PANEL 2: DAY 02 (Interactive Lock / Unlock Mechanism) -->
+            <div class="shivkunj-panel" id="panelDay2" role="tabpanel" aria-labelledby="tabDay2">
+              
+              <!-- INTERACTIVE LOCK GATE (Shown when Day 02 is locked) -->
+              <div class="lock-gate-box" id="day2LockGate">
+                <div class="lock-gate-content">
+                  <div class="lock-gate-icon-wrap" aria-hidden="true">
+                    <svg class="lock-gate-svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </div>
+                  <h4 class="lock-gate-title">Day 02 Milestone Locked: Transformers &amp; Chhatrapati Shivaji Maharaj AI Movie</h4>
+                  <p class="lock-gate-desc">
+                    Explore how students from Classes 5th to 10th moved from the 2017 Transformer architecture to generating a 10-second AI movie on the history of Chhatrapati Shivaji Maharaj 🚩.
+                  </p>
+                  <button type="button" class="btn btn-primary btn-unlock" id="btnUnlockDay2" aria-controls="day2FullLayout">
+                    <span class="unlock-icon" aria-hidden="true">🔓</span>
+                    <span>Unlock Day 02 Experience &amp; Video</span>
+                  </button>
+                  <span class="lock-gate-hint">Interactive Milestone Lock • Click to reveal</span>
+                </div>
+              </div>
+
+              <!-- UNLOCKED FULL CONTENT (Hidden until unlocked or toggled) -->
+              <div class="panel-grid is-hidden" id="day2FullLayout">
+                
+                <!-- Video / LinkedIn Embed Column -->
+                <div class="panel-media-col">
+                  <div class="linkedin-embed-card">
+                    <div class="embed-card-header">
+                      <div class="author-meta">
+                        <img src="assets/saad.jpg?v=20261107" alt="Saad Shaikh" class="author-avatar" width="38" height="38">
+                        <div>
+                          <div class="author-name">M. Saad M. Sadik Shaikh</div>
+                          <div class="post-date">Day 02 Workshop • Transforming Young Minds</div>
+                        </div>
+                      </div>
+
+                      <div class="embed-actions-top">
+                        <!-- Relock Button -->
+                        <button type="button" class="lock-toggle-pill" id="btnRelockDay2" title="Relock this milestone">
+                          <span aria-hidden="true">🔒</span>
+                          <span>Lock</span>
+                        </button>
+                        
+                        <a href="https://lnkd.in/p/dmjEpUaX" target="_blank" rel="noopener noreferrer" class="linkedin-direct-link" title="Open on LinkedIn">
+                          <svg class="linkedin-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46V10.9M7.86 6.57a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+                          <span>Post Link</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- LinkedIn Video Embed -->
+                    <div class="embed-wrapper">
+                      <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7484591491768741888" 
+                              height="440" 
+                              width="100%" 
+                              frameborder="0" 
+                              allowfullscreen="" 
+                              title="Shivkunj AI Initiative Day 02 Video on LinkedIn"
+                              loading="lazy"></iframe>
+                    </div>
+
+                    <div class="embed-card-footer">
+                      <a href="https://lnkd.in/p/dmjEpUaX" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary btn-full">
+                        <span>Watch Day 02 Video on LinkedIn</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Story Prose & Chhatrapati Shivaji Maharaj Movie Highlight -->
+                <div class="panel-content-col">
+                  <div class="status-indicator-pill unlocked">
+                    <span class="status-dot"></span>
+                    <span>Day 02 Milestone Unlocked • Classes 5th to 10th</span>
+                  </div>
+
+                  <h4 class="story-title">Transforming Young Minds with AI – Day 02 🤖✨</h4>
+
+                  <div class="story-body-text">
+                    <p>
+                      I had the opportunity to conduct the second day of my AI learning workshop at <strong>Mahatma Jyotirao Phule High School, Nana Peth, Pune</strong>, where I introduced students from Classes 5th to 10th to the fascinating world of Artificial Intelligence.
+                    </p>
+                    <p>
+                      The curiosity, excitement, and creativity shown by these young learners were truly inspiring. It was amazing to see students exploring how AI can be used not only for technology but also for storytelling, creativity, and learning.
+                    </p>
+
+                    <div class="concept-card">
+                      <div class="concept-head">🧠 Transformer Foundations:</div>
+                      <p>
+                        We explored the journey of Transformers in AI — from early developments to the revolutionary 2017 research paper <em>“Attention Is All You Need”</em>, which introduced the Transformer architecture and revolutionized modern AI.
+                      </p>
+                    </div>
+
+                    <div class="creativity-card">
+                      <span class="creativity-head">Students moved from concepts to creativity by using AI tools to:</span>
+                      <ul class="creativity-list">
+                        <li>🎨 <strong>Comic Books:</strong> Create cartoon-style comic strips</li>
+                        <li>📖 <strong>Visual Stories:</strong> Turn imaginative ideas into visual narratives</li>
+                        <li>🎬 <strong>AI Movies:</strong> Generate short AI-powered movies from historical topics</li>
+                      </ul>
+                    </div>
+
+                    <div class="highlight-callout">
+                      <span class="flag-icon" aria-hidden="true">🚩</span>
+                      <div class="highlight-inner">
+                        <strong class="highlight-title">Historic Workshop Highlight:</strong>
+                        <p class="highlight-desc">
+                          Creating a 10-second AI movie based on the history of <strong>Chhatrapati Shivaji Maharaj 🚩</strong>. Watching students’ reactions as history came alive through AI-generated visuals was an unforgettable moment!
+                        </p>
+                      </div>
+                    </div>
+
+                    <p>
+                      This experience reminded me that when young minds get access to the right tools and guidance, their imagination has no limits. A small step towards building an AI-ready generation. 🌱
+                    </p>
+                  </div>
+
+                  <div class="hashtags-list">
+                    <span class="tag">#AIForEducation</span>
+                    <span class="tag">#ArtificialIntelligence</span>
+                    <span class="tag">#FutureSkills</span>
+                    <span class="tag">#Innovation</span>
+                    <span class="tag">#StudentLearning</span>
+                    <span class="tag">#ChatrapatiShivajiMaharaj</span>
+                    <span class="tag">#Pune</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          <!-- PANEL 3: DAY 03 (Grand Graduation & 100+ Certificates with Interactive Lock) -->
+            <div class="shivkunj-panel" id="panelDay3" role="tabpanel" aria-labelledby="tabDay3">
+              
+              <!-- INTERACTIVE LOCK GATE FOR DAY 03 -->
+              <div class="lock-gate-box" id="day3LockGate">
+                <div class="lock-gate-content">
+                  <div class="lock-gate-icon-wrap" aria-hidden="true">
+                    <svg class="lock-gate-svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                  </div>
+                  <h4 class="lock-gate-title">Day 03 Milestone Locked: Grand Graduation &amp; 100+ Certificates 🎓🇮🇳</h4>
+                  <p class="lock-gate-desc">
+                    Celebrating Independence Day by honoring 100+ young learners who completed their AI learning journey, earned certificates, and stepped into becoming tomorrow's AI creators!
+                  </p>
+                  <button type="button" class="btn btn-primary btn-unlock" id="btnUnlockDay3" aria-controls="day3FullLayout">
+                    <span class="unlock-icon" aria-hidden="true">🔓</span>
+                    <span>Unlock Day 03 Graduation Video &amp; Story</span>
+                  </button>
+                  <span class="lock-gate-hint">Interactive Milestone Lock • Click to reveal</span>
+                </div>
+              </div>
+
+              <!-- UNLOCKED FULL CONTENT FOR DAY 03 -->
+              <div class="panel-grid is-hidden" id="day3FullLayout">
+                
+                <!-- Video / LinkedIn Embed Column -->
+                <div class="panel-media-col">
+                  <div class="linkedin-embed-card">
+                    <div class="embed-card-header">
+                      <div class="author-meta">
+                        <img src="assets/saad.jpg?v=20261107" alt="Saad Shaikh" class="author-avatar" width="38" height="38">
+                        <div>
+                          <div class="author-name">M. Saad M. Sadik Shaikh</div>
+                          <div class="post-date">Day 03 Workshop • Grand Graduation &amp; Certificates</div>
+                        </div>
+                      </div>
+
+                      <div class="embed-actions-top">
+                        <!-- Relock Button -->
+                        <button type="button" class="lock-toggle-pill" id="btnRelockDay3" title="Relock this milestone">
+                          <span aria-hidden="true">🔒</span>
+                          <span>Lock</span>
+                        </button>
+                        
+                        <a href="https://lnkd.in/p/dAJ2k7zB" target="_blank" rel="noopener noreferrer" class="linkedin-direct-link" title="Open on LinkedIn">
+                          <svg class="linkedin-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46V10.9M7.86 6.57a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+                          <span>Post Link</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    <!-- LinkedIn Video Embed -->
+                    <div class="embed-wrapper">
+                      <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7494431664249610240" 
+                              height="440" 
+                              width="100%" 
+                              frameborder="0" 
+                              allowfullscreen="" 
+                              title="Shivkunj AI Initiative Day 03 Video on LinkedIn"
+                              loading="lazy"></iframe>
+                    </div>
+
+                    <div class="embed-card-footer">
+                      <a href="https://lnkd.in/p/dAJ2k7zB" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary btn-full">
+                        <span>Watch Day 03 Video on LinkedIn</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Story Prose & Certificate Ceremony Highlights -->
+                <div class="panel-content-col">
+                  <div class="status-indicator-pill unlocked">
+                    <span class="status-dot"></span>
+                    <span>Day 03 Milestone Unlocked • 100+ Certificates Conferred</span>
+                  </div>
+
+                  <h4 class="story-title">🇮🇳 Day 03: Grand Graduation &amp; 100+ Certificates 🎓🤖</h4>
+
+                  <div class="story-body-text">
+                    <p>
+                      Celebrating the <strong>Independence Day of India</strong> with a day full of learning, creativity, and achievement! 🇮🇳
+                    </p>
+                    <p>
+                      Day 03 of the Shivkunj AI Workshop was truly special as students proudly received their certificates after completing their AI learning journey at <strong>Mahatma Jyotirao Phule High School, Pune</strong>.
+                    </p>
+
+                    <div class="milestone-metrics">
+                      <div class="metric-item">
+                        <span class="metric-val">100+</span>
+                        <span class="metric-desc">Certified Learners</span>
+                      </div>
+                      <div class="metric-item">
+                        <span class="metric-val">Day 3</span>
+                        <span class="metric-desc">Grand Finale</span>
+                      </div>
+                      <div class="metric-item">
+                        <span class="metric-val">100%</span>
+                        <span class="metric-desc">Practical Projects</span>
+                      </div>
+                    </div>
+
+                    <div class="concept-card">
+                      <div class="concept-head">🎓 From Consumers to AI Creators:</div>
+                      <p>
+                        ✨ Over <strong>100+ students</strong> successfully earned certificates and demonstrated their learning in Artificial Intelligence during the workshop. Seeing their excitement, confidence, and smiles while receiving their certificates was one of the most memorable moments of the initiative. ❤️
+                      </p>
+                    </div>
+
+                    <div class="quote-callout">
+                      <p class="quote-text">
+                        "From discovering AI tools to creating with AI, these young learners took their first steps toward becoming the AI creators of tomorrow. Let’s celebrate freedom by empowering the next generation with knowledge, skills, and technology." 🚀🇮🇳
+                      </p>
+                    </div>
+
+                    <p>
+                      A heartfelt congratulations to every single student, teacher, and mentor who made this 3-day milestone a reality!
+                    </p>
+                  </div>
+
+                  <div class="hashtags-list">
+                    <span class="tag">#ShivkunjAI</span>
+                    <span class="tag">#ArtificialIntelligence</span>
+                    <span class="tag">#AIWorkshop</span>
+                    <span class="tag">#FutureReady</span>
+                    <span class="tag">#StudentLearning</span>
+                    <span class="tag">#IndependenceDay</span>
+                    <span class="tag">#Pune</span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        
+          <!-- Upcoming Cohorts Teaser: More 100+ Stories Unlocking Soon -->
+          <div class="shivkunj-upcoming-banner">
+            <div class="upcoming-lock-pill">
+              <span class="lock-icon" aria-hidden="true">🔒</span>
+              <span>Milestone Locked • Cohort 2.0 In Progress</span>
+            </div>
+            
+            <h4 class="upcoming-title">More 100+ Stories Unlocking Soon... 🌱🚀</h4>
+            
+            <p class="upcoming-desc">
+              The Shivkunj AI Initiative is expanding into new rural and municipal high schools across Junnar, Pune, and Maharashtra. Cohort 2.0 workshop case studies, student-created AI projects, and hands-on classroom stories are currently being prepared.
+            </p>
+            
+            <div class="upcoming-badges">
+              <span class="up-badge">🎒 Next School Cohorts</span>
+              <span class="up-badge">📚 Vernacular AI Curriculums</span>
+              <span class="up-badge">🚩 100+ New Young Creators</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 id="contact-heading" class="section-title">Let's Connect &amp; Build</h2>
+          <p class="section-subtitle">Interested in collaborating on AI agents, cloud architectures, or speaking at technical events? Reach out directly.</p>
+          <div class="section-divider" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-wrapper reveal">
+          
+          <div class="contact-card-main">
+            <div class="contact-intro">
+              <h3 class="contact-intro-title">Always open to ideas, community initiatives &amp; engineering opportunities</h3>
+              <p class="contact-intro-text">
+                Whether you're exploring autonomous AI systems, designing cost-controlled AWS infrastructure, or looking for a passionate speaker for your tech community, I'd love to connect.
+              </p>
+              <div class="contact-badge-location">
+                <span class="loc-dot" aria-hidden="true"></span>
+                <span>Based in Junnar &amp; Pune, Maharashtra, India</span>
+              </div>
+            </div>
+
+            <!-- Contact Channels Grid -->
+            <div class="contact-channels-grid">
+              
+              <!-- Email -->
+              <a href="mailto:shaikhmsaadmsadik@gmail.com" class="channel-card" aria-label="Send email to shaikhmsaadmsadik@gmail.com">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Email Directly</span>
+                  <span class="channel-value">shaikhmsaadmsadik@gmail.com</span>
+                </div>
+                <span class="channel-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com/in/m-saad-m-sadik-shaikh-4263b0371" class="channel-card" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn: m-saad-m-sadik-shaikh-4263b0371">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-value">m-saad-m-sadik-shaikh-4263b0371</span>
+                </div>
+                <span class="channel-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <!-- Instagram -->
+              <a href="https://instagram.com/ai_engineer_saad" class="channel-card" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram: @ai_engineer_saad">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Instagram</span>
+                  <span class="channel-value">@ai_engineer_saad</span>
+                </div>
+                <span class="channel-arrow" aria-hidden="true">→</span>
+              </a>
+
+              <!-- AWS Builder Center -->
+              <a href="https://community.aws/u/saad07" class="channel-card" target="_blank" rel="noopener noreferrer" aria-label="Visit AWS Builder Center Profile: @saad07">
+                <div class="channel-icon-box" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path></svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">AWS Builder Center</span>
+                  <span class="channel-value">@saad07</span>
+                </div>
+                <span class="channel-arrow" aria-hidden="true">→</span>
+              </a>
+
+            </div>
+
+            <!-- Email Quick Copy Box -->
+            <div class="quick-copy-box">
+              <span class="copy-hint">Need a quick email address copy?</span>
+              <div class="copy-action-group">
+                <code class="copy-email-text" id="emailCode">shaikhmsaadmsadik@gmail.com</code>
+                <button type="button" class="btn btn-sm btn-outline copy-btn" id="copyEmailBtn" aria-label="Copy email address to clipboard">
+                  <svg class="copy-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span id="copyBtnText">Copy Email</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-monogram">S</span>
+          <span class="brand-text">M. Saad M. Sadik Shaikh</span>
+          <p class="footer-tagline">AI &amp; Data Science Scholar | AWS Student Builder Leader | Junnar &amp; Pune</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer quick navigation">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> M. Saad M. Sadik Shaikh. All rights reserved.
+        </p>
+
+        <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating Terminal Launcher (Fixed Bottom-Right) -->
+  <button type="button" 
+          class="terminal-launcher-btn" 
+          id="terminalLauncher" 
+          aria-label="Open Saad Interactive Terminal" 
+          aria-expanded="false" 
+          aria-controls="terminalPanel">
+    <span class="terminal-launcher-prompt" aria-hidden="true">&gt;_</span>
+    <span class="terminal-launcher-label">type help</span>
+    <span class="terminal-blinking-cursor" aria-hidden="true"></span>
+  </button>
+
+  <!-- Saad Terminal Panel (Modal Window on Desktop / Bottom Drawer on Mobile) -->
+  <aside class="terminal-panel" 
+         id="terminalPanel" 
+         role="dialog" 
+         aria-modal="true" 
+         aria-label="Saad Interactive Terminal" 
+         hidden>
+    <div class="terminal-header">
+      <div class="terminal-traffic-lights" aria-hidden="true">
+        <span class="traffic-dot dot-red"></span>
+        <span class="traffic-dot dot-yellow"></span>
+        <span class="traffic-dot dot-green"></span>
+      </div>
+      <div class="terminal-header-title">
+        <span class="term-user">saad</span>@<span class="term-host">portfolio</span>:<span class="term-cwd">~</span>
+      </div>
+      <button type="button" class="terminal-close-btn" id="terminalCloseBtn" aria-label="Close terminal">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Terminal Output Log (aria-live for accessibility) -->
+    <div class="terminal-output" id="terminalOutput" role="log" aria-live="polite" aria-atomic="false"></div>
+
+    <!-- Terminal Command Input Line -->
+    <form class="terminal-input-row" id="terminalForm" autocomplete="off" onsubmit="return false;">
+      <label for="terminalInput" class="terminal-cli-prompt">guest@saad:~$</label>
+      <input type="text" 
+             id="terminalInput" 
+             class="terminal-cli-input" 
+             autocomplete="off" 
+             autocapitalize="off" 
+             spellcheck="false" 
+             aria-label="Terminal command input" 
+             placeholder="Type a command...">
+    </form>
+
+    <!-- Suggestion Chips Shelf (Enables click-to-run on mobile) -->
+    <div class="terminal-chips-shelf" role="toolbar" aria-label="Quick command shortcuts">
+      <span class="chips-intro" aria-hidden="true">Chips:</span>
+      <button type="button" class="term-chip" data-cmd="help">help</button>
+      <button type="button" class="term-chip" data-cmd="about">about</button>
+      <button type="button" class="term-chip" data-cmd="skills">skills</button>
+      <button type="button" class="term-chip" data-cmd="projects">projects</button>
+      <button type="button" class="term-chip" data-cmd="roles">roles</button>
+      <button type="button" class="term-chip" data-cmd="hats">hats</button>
+      <button type="button" class="term-chip" data-cmd="contact">contact</button>
+      <button type="button" class="term-chip" data-cmd="theme neon">theme neon</button>
+      <button type="button" class="term-chip" data-cmd="sudo hire-saad">sudo hire-saad</button>
+      <button type="button" class="term-chip" data-cmd="clear">clear</button>
+    </div>
+  </aside>
+
+  <!-- Inline Theater Mode Modal (Plays directly on page, never leaves portfolio) -->
+  <div class="theater-modal" id="theaterModal" role="dialog" aria-modal="true" aria-labelledby="theaterModalTitle" hidden>
+    <div class="theater-modal-content">
+      <div class="theater-modal-header">
+        <span class="theater-modal-title" id="theaterModalTitle">Live Video Playback</span>
+        <button type="button" class="theater-close-btn" id="theaterCloseBtn" aria-label="Close theater view">✕</button>
+      </div>
+      <div class="theater-player-wrap">
+        <iframe id="theaterIframe" 
+                src="" 
+                title="Theater view player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script File (Cache-Busted) -->
+  <script src="script.js?v=20261107-aws"></script>
+</body>
+</html>
